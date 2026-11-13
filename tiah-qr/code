@@ -1,0 +1,27 @@
+# Tiah-QR
+
+Tiah-QR est une application web Python permettant de générer des QR codes
+à partir de textes ou de liens vers des fichiers importés.
+
+Le projet utilise Streamlit pour l’interface et Tornado pour l’API.
+
+## Fonctionnalités
+
+- Écran d’accueil.
+- Génération de QR codes à partir de textes.
+- Import d’images PNG et JPEG, de PDF et de documents Word DOCX.
+- Choix de la couleur du QR, sur fond blanc.
+- Téléchargement des QR codes au format PNG.
+- Historique enregistré localement dans un fichier JSON.
+- Suppression des QR et des fichiers associés avec confirmation.
+
+## Fonctionnement
+
+Pour un texte, le QR contient directement le message.
+
+Pour une image, un PDF ou un document Word, le QR contient une adresse
+permettant d’accéder au fichier conservé sur le serveur.
+Le fichier lui-même n’est pas intégré au QR.
+
+Le serveur doit donc rester accessible pour consulter les fichiers.
+

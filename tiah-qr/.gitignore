@@ -1,0 +1,19 @@
+﻿# Environnements virtuels
+venv/
+.venv/
+
+# Fichiers Python generes
+__pycache__/
+*.py[cod]
+
+# Documents importes, QR et historique
+data/
+
+# Secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Fichiers Windows
+Thumbs.db
+Desktop.ini
